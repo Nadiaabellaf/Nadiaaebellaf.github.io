@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hwb(0 96% 4%);
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #f8b6ea;
+    color: rgb(17, 14, 14);
+    padding: 20px;
+    text-align: left;
+}
+
+/* Estilos para la sección "Acerca de mí" */
+#acerca-de-mi {
+    background-color: #ffffff; 
+    border: 1px solid #f078c2e5;    
+    border-radius: 8px;        
+    padding: 20px;            
+    margin: 20px 0;            
+}
+
+#titulo {
+    color: #333;               
+    font-size: 28px;           
+    margin-bottom: 20px;       
+    text-align: left;       
+
+}
+
+
+/* Estilos para la sección de trabajos */
+#trabajos {
+    background-color: #ffffff; 
+    border: 1px solid #686666;    
+    border-radius: 8px;       
+    padding: 20px;             
+    margin: 20px 0;            
+}
+
+#trabajos h2 {
+    color: #5e1861;               
+    font-size: 24px;           
+    margin-bottom: 20px;       
+}
+
+#trabajos ul {
+    list-style-type: disc;     
+    padding-left: 20px;        
+}
+
+#trabajos li {
+    margin-bottom: 10px;       
+    font-size: 18px;           
+    color: #222121;               
+}
+
+/* Estilos para la sección de estudios */
+#estudios {
+    background-color: #ffffff; 
+    border: 1px solid #686666;    
+    border-radius: 8px;        
+    padding: 20px;             
+    margin: 20px 0;           
+}
+
+#estudios h2 {
+    color: #5e1861;               
+    font-size: 24px;           
+    margin-bottom: 20px;       
+}
+
+#estudios ul {
+    list-style-type: disc;     
+    padding-left: 20px;        
+}
+
+#estudios li {
+    margin-bottom: 10px;       
+    font-size: 18px;           
+    color: #1f1e1e;               
+}
+
+/* Estilos para el pie de página */
+.contacto {
+    background-color: #333;       
+    color: white;                 
+    text-align: center;           
+    padding: 15px;                
+    position: fixed;             
+    bottom: 0;                    
+    width: 100%;                  
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+
+.contacto p {
+    margin: 0;                    
+    font-size: 14px;              
+}
