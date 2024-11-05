@@ -15,12 +15,16 @@ body {
 }
 
 /* Estilos para la sección "Acerca de mí" */
-#acerca-de-mi {
+#acerca-de-mi,
+#trabajos,
+#estudios {
     background-color: #ffffff; 
     border: 1px solid #f078c2e5;    
     border-radius: 8px;        
     padding: 20px;            
-    margin: 20px 0;            
+    margin: 20px 0;  
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
+    overflow: hidden; /* Evita el desbordamiento de contenido */
 }
 
 #titulo {
@@ -28,17 +32,11 @@ body {
     font-size: 28px;           
     margin-bottom: 20px;       
     text-align: left;       
-
 }
-
 
 /* Estilos para la sección de trabajos */
 #trabajos {
-    background-color: #ffffff; 
-    border: 1px solid #686666;    
-    border-radius: 8px;       
-    padding: 20px;             
-    margin: 20px 0;            
+    border-color: #686666;    
 }
 
 #trabajos h2 {
@@ -60,11 +58,7 @@ body {
 
 /* Estilos para la sección de estudios */
 #estudios {
-    background-color: #ffffff; 
-    border: 1px solid #686666;    
-    border-radius: 8px;        
-    padding: 20px;             
-    margin: 20px 0;           
+    border-color: #686666;    
 }
 
 #estudios h2 {
@@ -84,18 +78,40 @@ body {
     color: #1f1e1e;               
 }
 
+/* Estilos para las imágenes */
+.fotos img {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+}
+
 /* Estilos para el pie de página */
 .contacto {
     background-color: #333;       
     color: white;                 
     text-align: center;           
     padding: 15px;                
-    position: fixed;             
-    bottom: 0;                    
     width: 100%;                  
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; /* Cambiado de fixed a relative */
+}
 
-.contacto p {
-    margin: 0;                    
-    font-size: 14px;              
+/* Ajusta el margen inferior del contenido principal para evitar superposición */
+main {
+    margin-bottom: 60px; /* Ajusta este valor según la altura de tu footer */
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño del texto general en pantallas pequeñas */
+    }
+    
+    #titulo {
+        font-size: 20px; /* Ajusta el tamaño del título */
+    }
+
+    #trabajos h2, 
+    #estudios h2 {
+        font-size: 18px; /* Ajusta el tamaño del encabezado en trabajos y estudios */
+    }
 }
